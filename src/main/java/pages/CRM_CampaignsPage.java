@@ -152,7 +152,7 @@ public class CRM_CampaignsPage extends BasePage {
 		Campaign_Name.sendKeys(name);
 		Campaign_Status.sendKeys(status);
 		campaignSize.sendKeys(size);
-		Valid_Close_date(date);
+		Calender.sendKeys(date);
 		targetAudience.sendKeys(audience);
 		Description.sendKeys(descr);
 		Submit_button.submit();

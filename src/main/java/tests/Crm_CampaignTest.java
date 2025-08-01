@@ -158,7 +158,7 @@ public class Crm_CampaignTest extends BaseTest {
 
 		WebDriver driver = getBrowser();
 		CRM_CampaignsPage CP = new CRM_CampaignsPage(driver);
-		//CP.Edit_Campaign_Name(driver, FileUtils.readCampaignPropertiesFile("updated.name"));
+		
 		if (WaitUtils.waitForElement(driver, CP.Campaign_label)) {
 			logger.info("User are on Campaign Page");
 			driver.manage().window().maximize();
@@ -171,6 +171,7 @@ public class Crm_CampaignTest extends BaseTest {
 		CP.Campaign_Name.clear();
 		logger.info(" Cleared old Campaign name");
 		CP.Campaign_Name.sendKeys(FileUtils.readCampaignPropertiesFile("updated.name"));
+		CP.Calender.clear();
 		logger.info(" Entered Updated Campaign name");
 		CP.update_Campaign.click();
 		logger.info(" Update Campaign clicked");
@@ -225,6 +226,8 @@ public class Crm_CampaignTest extends BaseTest {
 	public void TC_12_Verify_Delete_button() throws FileNotFoundException, IOException {
 		WebDriver driver = getBrowser();
 		CRM_CampaignsPage CP = new CRM_CampaignsPage(driver);
+		 WaitUtils.waitForElement(driver, CP.Campaign_Form_button);
+			CP.Campaign_Form_button.click();
 		CP.filling_the_Form(driver, FileUtils.readCampaignPropertiesFile("campaign.name"),
 				FileUtils.readCampaignPropertiesFile("status"), FileUtils.readCampaignPropertiesFile("size"),
 				FileUtils.readCampaignPropertiesFile("valid.date"), FileUtils.readCampaignPropertiesFile("audience"),

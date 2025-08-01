@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
+
 <suite name="Suite">
 	<parameter name="bName" value="chrome"></parameter>
-	<!--			<parameter name="userType" value="admin" ></parameter>-->
-=======
->>>>>>> branch 'main' of https://github.com/tekarchGroup5/NinzaCRMGroup5.git
-
-<<<<<<< HEAD
-	<!--	<test name="Test">-->
-	<!--		<classes>-->
-	<!--			<class name="tests.Crm_CreateLeadTest"></class>-->
-	<!--		</classes>-->
-	<!--	</test>-->
+	
 	<test name="Test">
 		<classes>
 
@@ -20,34 +11,34 @@
 		</classes>
 
 	</test>
-	<!--	<class name = "tests.Crm_CreateOpportunityTest"></class> -->
-
-
-</suite> 
-=======
-<suite name="Suite" parallel="classes" thread-count="5">
-    <!-- Browser parameter -->
+	
+</suite>
+<!--<suite name="Suite" parallel="classes" thread-count="5">
+     Browser parameter 
     <parameter name="bName" value="chrome" />
+    <listeners>
+		<listener class-name="listeners.ListenersCRM"></listener>
+	</listeners>
    
-    <!-- <parameter name="userType" value="admin" /> -->
+     <parameter name="userType" value="admin" /> 
 
-    <!-- Test block -->
+     Test block 
     <test name="Create Lead and Opportunity Tests">
         <classes>
-<!--            <class name="tests.Crm_CreateLeadTest" />-->
-<!--            <class name="tests.Crm_CreateOpportunityTest" /> -->
-         <!--     <class name="tests.Crm_CreateContactTest" /> -->
-         <!--     <class name="tests.Crm_CreateAccountTest" /> -->
-          <!--    <class name="tests.Crm_CreateTaskTest" /> -->
-          <!--    <class name="tests.Crm_CreateEventTest" /> -->
-           <!--   <class name="tests.Crm_CreateCaseTest" /> -->
-           <!--   <class name="tests.Crm_CreateProductTest" /> -->
-           <!--   <class name="tests.Crm_CreateQuoteTest" /> -->
-            <!--  <class name="tests.Crm_CreateInvoiceTest" /> -->
-<!--            	<class name="tests.Crm_CampaignTest"></class>-->
+            <class name="tests.Crm_CreateLeadTest" />
+            <class name="tests.Crm_CreateOpportunityTest" /> 
+              <class name="tests.Crm_CreateContactTest" /> 
+              <class name="tests.Crm_CreateAccountTest" /> 
+              <class name="tests.Crm_CreateTaskTest" /> 
+              <class name="tests.Crm_CreateEventTest" /> 
+              <class name="tests.Crm_CreateCaseTest" /> 
+              <class name="tests.Crm_CreateProductTest" /> 
+              <class name="tests.Crm_CreateQuoteTest" /> 
+              <class name="tests.Crm_CreateInvoiceTest" /> 
+            	<class name="tests.Crm_CampaignTest"></class>
         </classes>
     </test>
 
 </suite>
-	
->>>>>>> branch 'main' of https://github.com/tekarchGroup5/NinzaCRMGroup5.git
+	-->
+
