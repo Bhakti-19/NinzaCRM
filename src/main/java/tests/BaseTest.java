@@ -20,17 +20,19 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import listeners.ListenersCRM;
 import pages.CRM_HomePage;
 import pages.CRM_LoginPage;
 import utils.FileUtils;
 import utils.ReportManager;
-
+@Listeners(ListenersCRM.class)
 public class BaseTest {
 
 	public static ExtentReports extent;
@@ -114,11 +116,11 @@ public class BaseTest {
 		test.set(extent.createTest(method.getName()));
 
 		// Initialize and configure driver
-		setDriver(browserName, false);
+		setDriver(browserName, false); // Set headless to false for normal runs
 		WebDriver driver = getBrowser();
 		driver.manage().window().maximize();//added this code later to maximize the browser window, this will be a git conflict
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.manage().window().maximize();
+		
 
 		// Navigate to CRM URL
 		String crmUrl = FileUtils.readLoginPropertiesFile("prod.url");
@@ -140,7 +142,7 @@ public class BaseTest {
 		this.hp = homePage;
 	}
 
-	@AfterMethod(alwaysRun = false)
+	@AfterMethod(alwaysRun = true)
 	public void tearDownTest() {
 		WebDriver driver = getBrowser();
 		if (driver != null) {

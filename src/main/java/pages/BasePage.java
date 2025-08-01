@@ -1,8 +1,17 @@
 package pages;
 
 import java.time.Duration;
+
+import java.util.List;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+
+import java.util.List;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import java.util.Set;
 
 import org.apache.logging.log4j.LogManager;
@@ -138,6 +147,29 @@ public class BasePage {
 	public void scrolldown() {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0, 500)");
+	}
+
+	public static String errorValidationMsg(WebElement ele)// priyanka
+	{
+
+		String validationMessage = ele.getAttribute("validationMessage");
+		return validationMessage;
+
+	}
+
+	public static String getValueFrmField(WebElement ele)// priyanka
+	{
+
+		String value = ele.getAttribute("value");
+		return value;
+
+	}
+
+	public static int checkDropDownOptions(WebElement ele) {// priyanka
+		Select dropDwn = new Select(ele);
+		// Get all options
+		List<WebElement> options = dropDwn.getOptions();
+		return options.size();
 	}
 
 	public String getErrorMessage(WebElement element) {

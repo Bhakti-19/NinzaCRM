@@ -1,0 +1,28 @@
+2025-07-31-12:14:38 INFO  Navigated to CRM URL: http://49.249.28.218:8098/
+2025-07-31-12:14:38 DEBUG Navigated to the login page: http://49.249.28.218:8098/
+2025-07-31-12:14:38 DEBUG Username is entered
+2025-07-31-12:14:38 DEBUG Password is entered
+2025-07-31-12:14:39 DEBUG Sign In button clicked
+2025-07-31-12:14:39 DEBUG Login successful, landed on Home Page.
+2025-07-31-12:14:39 DEBUG Checking if user is on CRM Home Page
+2025-07-31-12:14:39 INFO  Login to Ninza CRM validated successfully.
+2025-07-31-12:15:07 INFO   Updated Status is entered
+2025-07-31-12:15:07 INFO  you are on Campaign Page
+2025-07-31-12:15:33 INFO  Updated Status Created successfully!
+2025-07-31-12:15:40 INFO  Navigated to CRM URL: http://49.249.28.218:8098/
+2025-07-31-12:15:40 DEBUG Navigated to the login page: http://49.249.28.218:8098/
+2025-07-31-12:15:40 DEBUG Username is entered
+2025-07-31-12:15:41 DEBUG Password is entered
+2025-07-31-12:15:41 DEBUG Sign In button clicked
+2025-07-31-12:15:41 DEBUG Login successful, landed on Home Page.
+2025-07-31-12:15:41 DEBUG Checking if user is on CRM Home Page
+2025-07-31-12:15:41 INFO  Login to Ninza CRM validated successfully.
+2025-07-31-12:15:43 INFO   Verified search button functionality.
+2025-07-31-12:15:50 INFO  Navigated to CRM URL: http://49.249.28.218:8098/
+2025-07-31-12:15:50 DEBUG Navigated to the login page: http://49.249.28.218:8098/
+2025-07-31-12:15:51 DEBUG Username is entered
+2025-07-31-12:15:51 DEBUG Password is entered
+2025-07-31-12:15:51 DEBUG Sign In button clicked
+2025-07-31-12:15:51 DEBUG Login successful, landed on Home Page.
+2025-07-31-12:15:51 DEBUG Checking if user is on CRM Home Page
+2025-07-31-12:15:51 INFO  Login to Ninza CRM validated successfully.
